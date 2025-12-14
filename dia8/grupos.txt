@@ -1,0 +1,298 @@
+Grupo raíz 1 (tamaño 1): 1 
+Grupo raíz 7 (tamaño 3): 7 108 370 
+Grupo raíz 8 (tamaño 2): 8 846 
+Grupo raíz 11 (tamaño 1): 11 
+Grupo raíz 15 (tamaño 5): 15 31 107 347 350 
+Grupo raíz 18 (tamaño 3): 18 613 698 
+Grupo raíz 22 (tamaño 8): 22 60 125 433 597 754 837 847 
+Grupo raíz 26 (tamaño 2): 26 767 
+Grupo raíz 27 (tamaño 3): 27 334 445 
+Grupo raíz 28 (tamaño 8): 28 73 383 447 479 510 742 839 
+Grupo raíz 29 (tamaño 1): 29 
+Grupo raíz 32 (tamaño 2): 32 784 
+Grupo raíz 33 (tamaño 5): 30 33 65 276 536 
+Grupo raíz 34 (tamaño 3): 34 240 694 
+Grupo raíz 37 (tamaño 23): 37 90 132 138 160 171 181 185 333 344 358 489 512 608 716 728 741 778 802 869 972 987 999 
+Grupo raíz 38 (tamaño 2): 38 309 
+Grupo raíz 39 (tamaño 1): 39 
+Grupo raíz 41 (tamaño 5): 40 41 104 109 556 
+Grupo raíz 42 (tamaño 12): 42 56 156 194 198 241 363 381 464 679 795 819 
+Grupo raíz 43 (tamaño 2): 43 129 
+Grupo raíz 44 (tamaño 15): 44 131 201 264 421 483 531 588 638 682 752 883 895 938 990 
+Grupo raíz 45 (tamaño 1): 45 
+Grupo raíz 46 (tamaño 2): 46 82 
+Grupo raíz 49 (tamaño 3): 49 169 456 
+Grupo raíz 50 (tamaño 1): 50 
+Grupo raíz 51 (tamaño 2): 51 287 
+Grupo raíz 52 (tamaño 2): 52 126 
+Grupo raíz 53 (tamaño 8): 53 263 323 349 605 623 888 983 
+Grupo raíz 54 (tamaño 73): 36 47 48 54 57 78 79 85 88 91 94 115 117 118 122 139 157 190 203 272 286 303 320 330 342 352 354 357 373 375 382 487 495 543 557 566 584 586 601 641 646 651 663 677 678 683 692 701 703 710 739 743 749 758 760 783 785 789 798 807 812 834 850 885 913 931 936 948 955 961 968 969 985 
+Grupo raíz 55 (tamaño 2): 55 98 
+Grupo raíz 58 (tamaño 2): 58 645 
+Grupo raíz 59 (tamaño 1): 59 
+Grupo raíz 61 (tamaño 7): 61 249 324 369 804 977 996 
+Grupo raíz 63 (tamaño 7): 6 63 228 577 630 810 935 
+Grupo raíz 66 (tamaño 5): 66 101 121 315 779 
+Grupo raíz 68 (tamaño 5): 68 280 319 687 918 
+Grupo raíz 69 (tamaño 9): 12 69 92 208 256 420 569 722 763 
+Grupo raíz 71 (tamaño 15): 5 14 71 137 142 153 268 341 355 523 587 612 690 943 988 
+Grupo raíz 72 (tamaño 1): 72 
+Grupo raíz 75 (tamaño 12): 75 152 231 372 465 535 550 796 877 881 891 937 
+Grupo raíz 76 (tamaño 38): 19 21 64 76 84 123 148 175 186 259 274 291 338 414 526 539 546 562 574 585 589 636 659 661 662 676 688 696 723 756 769 897 919 928 940 941 942 950 
+Grupo raíz 77 (tamaño 1): 77 
+Grupo raíz 80 (tamaño 1): 80 
+Grupo raíz 81 (tamaño 1): 81 
+Grupo raíz 83 (tamaño 6): 83 257 364 449 582 667 
+Grupo raíz 87 (tamaño 8): 87 422 652 721 755 923 966 975 
+Grupo raíz 97 (tamaño 2): 97 792 
+Grupo raíz 100 (tamaño 1): 100 
+Grupo raíz 103 (tamaño 1): 103 
+Grupo raíz 106 (tamaño 1): 106 
+Grupo raíz 110 (tamaño 4): 110 146 468 890 
+Grupo raíz 112 (tamaño 1): 112 
+Grupo raíz 113 (tamaño 10): 113 120 163 227 451 466 808 889 963 967 
+Grupo raíz 114 (tamaño 1): 114 
+Grupo raíz 116 (tamaño 1): 116 
+Grupo raíz 124 (tamaño 3): 124 289 691 
+Grupo raíz 127 (tamaño 11): 16 127 242 290 348 411 432 583 604 761 771 
+Grupo raíz 130 (tamaño 6): 130 162 511 680 781 799 
+Grupo raíz 133 (tamaño 7): 133 244 294 514 592 876 989 
+Grupo raíz 136 (tamaño 1): 136 
+Grupo raíz 140 (tamaño 2): 140 314 
+Grupo raíz 143 (tamaño 1): 143 
+Grupo raíz 144 (tamaño 1): 144 
+Grupo raíz 145 (tamaño 1): 145 
+Grupo raíz 147 (tamaño 4): 147 299 501 858 
+Grupo raíz 149 (tamaño 5): 149 209 520 794 866 
+Grupo raíz 150 (tamaño 29): 25 67 134 150 187 188 191 361 425 474 482 505 596 602 609 627 639 708 737 765 777 875 882 906 907 921 925 930 932 
+Grupo raíz 151 (tamaño 1): 151 
+Grupo raíz 154 (tamaño 1): 154 
+Grupo raíz 155 (tamaño 2): 155 435 
+Grupo raíz 165 (tamaño 2): 165 637 
+Grupo raíz 166 (tamaño 3): 166 444 642 
+Grupo raíz 167 (tamaño 9): 167 305 378 385 478 595 644 718 790 
+Grupo raíz 168 (tamaño 1): 168 
+Grupo raíz 170 (tamaño 1): 170 
+Grupo raíz 172 (tamaño 3): 172 180 853 
+Grupo raíz 174 (tamaño 2): 174 719 
+Grupo raíz 176 (tamaño 3): 176 325 327 
+Grupo raíz 182 (tamaño 1): 182 
+Grupo raíz 192 (tamaño 1): 192 
+Grupo raíz 195 (tamaño 2): 195 954 
+Grupo raíz 196 (tamaño 2): 196 828 
+Grupo raíz 197 (tamaño 2): 197 774 
+Grupo raíz 199 (tamaño 4): 199 460 507 893 
+Grupo raíz 200 (tamaño 1): 200 
+Grupo raíz 204 (tamaño 1): 204 
+Grupo raíz 205 (tamaño 1): 205 
+Grupo raíz 207 (tamaño 1): 207 
+Grupo raíz 210 (tamaño 3): 210 223 984 
+Grupo raíz 211 (tamaño 1): 211 
+Grupo raíz 212 (tamaño 5): 23 111 212 538 905 
+Grupo raíz 215 (tamaño 1): 215 
+Grupo raíz 216 (tamaño 1): 216 
+Grupo raíz 217 (tamaño 1): 217 
+Grupo raíz 218 (tamaño 1): 218 
+Grupo raíz 220 (tamaño 2): 220 884 
+Grupo raíz 221 (tamaño 1): 221 
+Grupo raíz 222 (tamaño 2): 222 547 
+Grupo raíz 224 (tamaño 2): 224 412 
+Grupo raíz 229 (tamaño 1): 229 
+Grupo raíz 230 (tamaño 1): 230 
+Grupo raíz 232 (tamaño 3): 232 269 387 
+Grupo raíz 233 (tamaño 11): 177 226 233 328 368 376 619 780 829 857 912 
+Grupo raíz 234 (tamaño 8): 234 533 705 731 818 840 908 939 
+Grupo raíz 235 (tamaño 8): 70 235 285 458 594 836 959 970 
+Grupo raíz 236 (tamaño 2): 236 842 
+Grupo raíz 237 (tamaño 1): 237 
+Grupo raíz 238 (tamaño 2): 238 702 
+Grupo raíz 243 (tamaño 4): 243 434 634 956 
+Grupo raíz 245 (tamaño 1): 245 
+Grupo raíz 246 (tamaño 1): 246 
+Grupo raíz 248 (tamaño 3): 248 629 917 
+Grupo raíz 250 (tamaño 2): 250 714 
+Grupo raíz 252 (tamaño 4): 252 713 772 981 
+Grupo raíz 255 (tamaño 1): 255 
+Grupo raíz 258 (tamaño 1): 258 
+Grupo raíz 260 (tamaño 1): 260 
+Grupo raíz 265 (tamaño 4): 265 302 441 513 
+Grupo raíz 266 (tamaño 26): 102 141 164 173 214 262 266 307 310 317 430 440 455 485 490 593 640 686 729 740 768 803 841 911 916 965 
+Grupo raíz 267 (tamaño 2): 267 603 
+Grupo raíz 270 (tamaño 11): 3 62 128 239 270 298 453 491 797 838 926 
+Grupo raíz 273 (tamaño 2): 273 553 
+Grupo raíz 275 (tamaño 4): 275 322 684 820 
+Grupo raíz 277 (tamaño 1): 277 
+Grupo raíz 278 (tamaño 1): 278 
+Grupo raíz 279 (tamaño 2): 279 671 
+Grupo raíz 282 (tamaño 1): 282 
+Grupo raíz 288 (tamaño 4): 254 288 548 633 
+Grupo raíz 292 (tamaño 1): 292 
+Grupo raíz 293 (tamaño 2): 293 549 
+Grupo raíz 296 (tamaño 1): 296 
+Grupo raíz 297 (tamaño 1): 297 
+Grupo raíz 300 (tamaño 1): 300 
+Grupo raíz 301 (tamaño 2): 301 443 
+Grupo raíz 304 (tamaño 1): 304 
+Grupo raíz 306 (tamaño 2): 306 362 
+Grupo raíz 311 (tamaño 2): 311 788 
+Grupo raíz 313 (tamaño 6): 313 390 463 724 960 995 
+Grupo raíz 316 (tamaño 5): 183 316 336 666 951 
+Grupo raíz 321 (tamaño 1): 321 
+Grupo raíz 326 (tamaño 3): 326 450 715 
+Grupo raíz 331 (tamaño 1): 331 
+Grupo raíz 337 (tamaño 5): 24 337 481 814 974 
+Grupo raíz 343 (tamaño 2): 343 457 
+Grupo raíz 345 (tamaño 5): 312 345 388 506 757 
+Grupo raíz 346 (tamaño 5): 346 415 497 611 617 
+Grupo raíz 351 (tamaño 4): 10 202 351 782 
+Grupo raíz 353 (tamaño 7): 96 251 295 353 469 648 845 
+Grupo raíz 359 (tamaño 1): 359 
+Grupo raíz 360 (tamaño 2): 360 964 
+Grupo raíz 365 (tamaño 1): 365 
+Grupo raíz 366 (tamaño 1): 366 
+Grupo raíz 367 (tamaño 4): 367 494 700 910 
+Grupo raíz 371 (tamaño 7): 135 371 419 429 476 521 544 
+Grupo raíz 374 (tamaño 2): 374 979 
+Grupo raíz 377 (tamaño 5): 377 393 610 654 709 
+Grupo raíz 379 (tamaño 3): 119 379 944 
+Grupo raíz 380 (tamaño 2): 380 532 
+Grupo raíz 384 (tamaño 1): 384 
+Grupo raíz 386 (tamaño 1): 386 
+Grupo raíz 389 (tamaño 7): 271 329 389 475 519 685 787 
+Grupo raíz 392 (tamaño 8): 213 392 576 689 764 833 871 880 
+Grupo raíz 394 (tamaño 1): 394 
+Grupo raíz 395 (tamaño 4): 318 395 635 971 
+Grupo raíz 397 (tamaño 6): 13 397 413 571 572 978 
+Grupo raíz 398 (tamaño 3): 398 399 759 
+Grupo raíz 401 (tamaño 1): 401 
+Grupo raíz 403 (tamaño 2): 403 711 
+Grupo raíz 405 (tamaño 8): 2 405 502 503 675 736 793 992 
+Grupo raíz 406 (tamaño 1): 406 
+Grupo raíz 409 (tamaño 1): 409 
+Grupo raíz 410 (tamaño 7): 89 219 261 391 410 471 957 
+Grupo raíz 416 (tamaño 22): 9 86 158 161 193 206 225 356 416 496 545 560 563 573 575 599 668 822 835 849 854 993 
+Grupo raíz 417 (tamaño 11): 339 407 417 620 653 673 693 699 825 831 899 
+Grupo raíz 423 (tamaño 3): 423 530 770 
+Grupo raíz 424 (tamaño 1): 424 
+Grupo raíz 427 (tamaño 1): 427 
+Grupo raíz 428 (tamaño 1): 428 
+Grupo raíz 431 (tamaño 1): 431 
+Grupo raíz 437 (tamaño 1): 437 
+Grupo raíz 438 (tamaño 10): 20 35 426 438 470 534 540 751 982 997 
+Grupo raíz 439 (tamaño 1): 439 
+Grupo raíz 442 (tamaño 4): 442 681 734 863 
+Grupo raíz 446 (tamaño 4): 93 178 446 697 
+Grupo raíz 448 (tamaño 2): 448 622 
+Grupo raíz 452 (tamaño 1): 452 
+Grupo raíz 454 (tamaño 1): 454 
+Grupo raíz 459 (tamaño 1): 459 
+Grupo raíz 461 (tamaño 1): 461 
+Grupo raíz 462 (tamaño 3): 462 864 924 
+Grupo raíz 467 (tamaño 3): 396 467 852 
+Grupo raíz 472 (tamaño 2): 472 672 
+Grupo raíz 473 (tamaño 1): 473 
+Grupo raíz 480 (tamaño 2): 480 933 
+Grupo raíz 484 (tamaño 6): 99 484 555 581 717 720 
+Grupo raíz 486 (tamaño 1): 486 
+Grupo raíz 488 (tamaño 3): 488 616 632 
+Grupo raíz 492 (tamaño 2): 492 580 
+Grupo raíz 493 (tamaño 1): 493 
+Grupo raíz 498 (tamaño 2): 498 762 
+Grupo raíz 499 (tamaño 3): 308 499 900 
+Grupo raíz 500 (tamaño 1): 500 
+Grupo raíz 504 (tamaño 3): 504 509 815 
+Grupo raíz 515 (tamaño 2): 515 991 
+Grupo raíz 516 (tamaño 3): 516 861 962 
+Grupo raíz 517 (tamaño 1): 517 
+Grupo raíz 518 (tamaño 1): 518 
+Grupo raíz 522 (tamaño 1): 522 
+Grupo raíz 524 (tamaño 3): 524 827 980 
+Grupo raíz 525 (tamaño 5): 281 402 525 791 901 
+Grupo raíz 527 (tamaño 1): 527 
+Grupo raíz 528 (tamaño 1): 528 
+Grupo raíz 529 (tamaño 1): 529 
+Grupo raíz 537 (tamaño 2): 537 994 
+Grupo raíz 541 (tamaño 1): 541 
+Grupo raíz 542 (tamaño 1): 542 
+Grupo raíz 552 (tamaño 4): 552 665 920 973 
+Grupo raíz 554 (tamaño 1): 554 
+Grupo raíz 558 (tamaño 2): 558 579 
+Grupo raíz 559 (tamaño 6): 0 74 559 600 649 658 
+Grupo raíz 561 (tamaño 1): 561 
+Grupo raíz 564 (tamaño 1): 564 
+Grupo raíz 565 (tamaño 1): 565 
+Grupo raíz 568 (tamaño 1): 568 
+Grupo raíz 570 (tamaño 1): 570 
+Grupo raíz 578 (tamaño 1): 578 
+Grupo raíz 591 (tamaño 3): 247 591 946 
+Grupo raíz 598 (tamaño 2): 598 832 
+Grupo raíz 606 (tamaño 2): 606 753 
+Grupo raíz 615 (tamaño 1): 615 
+Grupo raíz 618 (tamaño 1): 618 
+Grupo raíz 621 (tamaño 2): 621 712 
+Grupo raíz 624 (tamaño 1): 624 
+Grupo raíz 625 (tamaño 5): 625 664 744 786 862 
+Grupo raíz 626 (tamaño 1): 626 
+Grupo raíz 628 (tamaño 1): 628 
+Grupo raíz 631 (tamaño 1): 631 
+Grupo raíz 643 (tamaño 1): 643 
+Grupo raíz 647 (tamaño 3): 647 826 934 
+Grupo raíz 650 (tamaño 3): 650 896 915 
+Grupo raíz 656 (tamaño 1): 656 
+Grupo raíz 657 (tamaño 1): 657 
+Grupo raíz 660 (tamaño 1): 660 
+Grupo raíz 669 (tamaño 2): 669 886 
+Grupo raíz 674 (tamaño 22): 105 159 184 284 332 404 408 418 477 551 607 614 670 674 726 800 824 870 874 878 903 904 
+Grupo raíz 695 (tamaño 1): 695 
+Grupo raíz 704 (tamaño 1): 704 
+Grupo raíz 706 (tamaño 1): 706 
+Grupo raíz 707 (tamaño 1): 707 
+Grupo raíz 725 (tamaño 1): 725 
+Grupo raíz 730 (tamaño 1): 730 
+Grupo raíz 732 (tamaño 1): 732 
+Grupo raíz 733 (tamaño 1): 733 
+Grupo raíz 735 (tamaño 2): 735 860 
+Grupo raíz 738 (tamaño 1): 738 
+Grupo raíz 745 (tamaño 1): 745 
+Grupo raíz 746 (tamaño 1): 746 
+Grupo raíz 748 (tamaño 1): 748 
+Grupo raíz 750 (tamaño 1): 750 
+Grupo raíz 766 (tamaño 2): 766 949 
+Grupo raíz 773 (tamaño 1): 773 
+Grupo raíz 775 (tamaño 1): 775 
+Grupo raíz 776 (tamaño 1): 776 
+Grupo raíz 801 (tamaño 1): 801 
+Grupo raíz 805 (tamaño 2): 805 952 
+Grupo raíz 806 (tamaño 1): 806 
+Grupo raíz 809 (tamaño 3): 809 813 953 
+Grupo raíz 811 (tamaño 10): 17 189 335 400 508 567 655 747 811 898 
+Grupo raíz 816 (tamaño 1): 816 
+Grupo raíz 817 (tamaño 1): 817 
+Grupo raíz 821 (tamaño 1): 821 
+Grupo raíz 823 (tamaño 1): 823 
+Grupo raíz 830 (tamaño 1): 830 
+Grupo raíz 844 (tamaño 1): 844 
+Grupo raíz 848 (tamaño 1): 848 
+Grupo raíz 851 (tamaño 1): 851 
+Grupo raíz 855 (tamaño 11): 4 179 253 283 340 436 590 727 843 855 947 
+Grupo raíz 856 (tamaño 1): 856 
+Grupo raíz 859 (tamaño 1): 859 
+Grupo raíz 865 (tamaño 1): 865 
+Grupo raíz 867 (tamaño 1): 867 
+Grupo raíz 868 (tamaño 1): 868 
+Grupo raíz 872 (tamaño 1): 872 
+Grupo raíz 873 (tamaño 1): 873 
+Grupo raíz 879 (tamaño 1): 879 
+Grupo raíz 887 (tamaño 3): 95 887 929 
+Grupo raíz 892 (tamaño 1): 892 
+Grupo raíz 894 (tamaño 1): 894 
+Grupo raíz 902 (tamaño 1): 902 
+Grupo raíz 909 (tamaño 1): 909 
+Grupo raíz 914 (tamaño 1): 914 
+Grupo raíz 922 (tamaño 1): 922 
+Grupo raíz 927 (tamaño 1): 927 
+Grupo raíz 945 (tamaño 1): 945 
+Grupo raíz 958 (tamaño 1): 958 
+Grupo raíz 976 (tamaño 1): 976 
+Grupo raíz 986 (tamaño 1): 986 
+Grupo raíz 998 (tamaño 1): 998 

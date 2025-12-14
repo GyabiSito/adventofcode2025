@@ -1,0 +1,2 @@
+Tamanios más grandes: 73 38 29 
+Resultado final: 80446
