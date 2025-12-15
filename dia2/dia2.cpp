@@ -54,16 +54,43 @@ Rango separarRango(char *texto)
     return r;
 }
 
+// bool esInvalido(long long numero)
+// {
+//     string s = to_string(numero);
+//     if (s.length() % 2 != 0)
+//         return false;
+
+//     int mitad = s.length() / 2;
+//     string p1 = s.substr(0, mitad);
+//     string p2 = s.substr(mitad);
+//     return p1 == p2;
+// }
+
+//parte 2:
 bool esInvalido(long long numero)
 {
     string s = to_string(numero);
-    if (s.length() % 2 != 0)
-        return false;
+    int len = s.length();
 
-    int mitad = s.length() / 2;
-    string p1 = s.substr(0, mitad);
-    string p2 = s.substr(mitad);
-    return p1 == p2;
+    for (int repSize = 1; repSize <= len / 2; repSize++)
+    {
+        if (len % repSize != 0)
+            continue;
+
+        string bloque = s.substr(0, repSize);
+        string repetido = "";
+
+        int repeticiones = len / repSize;
+        for (int i = 0; i < repeticiones; i++)
+        {
+            repetido += bloque;
+        }
+
+        if (repetido == s)
+            return true;
+    }
+
+    return false;
 }
 
 int main()
@@ -98,7 +125,7 @@ int main()
         {
             if (esInvalido(i))
             {
-                cout << "Invalido: " << i << endl;
+                // cout << "Invalido: " << i << endl;
                 total += i;
             }
         }
