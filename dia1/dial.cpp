@@ -107,44 +107,69 @@ nodoLista moverseADireccion(Lista L, int pasos)
     return aux;
 }
 
+// Lista recorrer(Lista L, int pasos, bool direccion)
+// {
+//     nodoLista aux = L->lista;
+//     if (direccion)
+//     {
+//         // derecha
+//         // me tengo que mover A L->posicion
+//         aux = moverseADireccion(L, L->posicion);
+//         while (pasos > 0)
+//         {
+//             aux = aux->sig;
+
+            
+//             pasos--;
+//         }
+//     }
+//     else
+//     {
+//         aux = moverseADireccion(L, L->posicion);
+//         while (pasos > 0)
+//         {
+//             aux = aux->ant;
+//             pasos--;
+//         }
+//     }
+//     cout << "===================================" << endl;
+//     cout << "Mi total es:" << L->total << endl;
+//     cout << "Mi posicion actual es:" << L->posicion << endl;
+//     cout << "===================================" << endl;
+//     L->posicion = aux->valor;
+//     cout << "------------------------------------" << endl;
+//     cout << "Mi posicion cambiada es:" << L->posicion << endl;
+//     cout << "Mi total cambaiado es:" << L->total << endl;
+//     cout << "------------------------------------" << endl;
+//     if (L->posicion == 0)
+//     {
+//         L->total += 1;
+//     }
+//     return L;
+// }
+
+//Parte 2
 Lista recorrer(Lista L, int pasos, bool direccion)
 {
-    nodoLista aux = L->lista;
-    if (direccion)
+    nodoLista aux = moverseADireccion(L, L->posicion);
+
+    while (pasos > 0)
     {
-        // derecha
-        // me tengo que mover A L->posicion
-        aux = moverseADireccion(L, L->posicion);
-        while (pasos > 0)
+        aux = direccion ? aux->sig : aux->ant;
+
+        if (aux->valor == 0)
         {
-            aux = aux->sig;
-            pasos--;
+            L->total += 1;
         }
+
+        pasos--;
     }
-    else
-    {
-        aux = moverseADireccion(L, L->posicion);
-        while (pasos > 0)
-        {
-            aux = aux->ant;
-            pasos--;
-        }
-    }
-    cout << "===================================" << endl;
-    cout << "Mi total es:" << L->total << endl;
-    cout << "Mi posicion actual es:" << L->posicion << endl;
-    cout << "===================================" << endl;
+
     L->posicion = aux->valor;
-    cout << "------------------------------------" << endl;
-    cout << "Mi posicion cambiada es:" << L->posicion << endl;
-    cout << "Mi total cambaiado es:" << L->total << endl;
-    cout << "------------------------------------" << endl;
-    if (L->posicion == 0)
-    {
-        L->total += 1;
-    }
+
     return L;
 }
+
 
 void imprimir_todo(Lista L)
 {
