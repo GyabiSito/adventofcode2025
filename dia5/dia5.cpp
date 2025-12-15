@@ -165,15 +165,85 @@ int main()
         }
     }
 
-    int frescos = 0;
-    nodoInt *actual = ids->lista;
-    while (actual != NULL)
+    // ordenar los rangos por 'desde'
+    ListaRango rangosOrdenados = crearListaRango();
+    nodoRango *r = rangos->lista;
+    while (r != NULL)
     {
-        if (esFresco(actual->valor, rangos))
-            frescos++;
-        actual = actual->sig;
+        // Inserción ordenada
+        Rango nuevo = r->valor;
+        nodoRango *actual = rangosOrdenados->lista;
+        nodoRango *anterior = NULL;
+
+        nodoRango *nuevoNodo = new nodoRango;
+        nuevoNodo->valor = nuevo;
+        nuevoNodo->sig = NULL;
+        nuevoNodo->ant = NULL;
+
+        while (actual != NULL && actual->valor.desde < nuevo.desde)
+        {
+            anterior = actual;
+            actual = actual->sig;
+        }
+
+        if (anterior == NULL)
+        {
+            // insertar al inicio
+            nuevoNodo->sig = rangosOrdenados->lista;
+            if (rangosOrdenados->lista != NULL)
+                rangosOrdenados->lista->ant = nuevoNodo;
+            rangosOrdenados->lista = nuevoNodo;
+        }
+        else
+        {
+            nuevoNodo->sig = anterior->sig;
+            if (anterior->sig != NULL)
+                anterior->sig->ant = nuevoNodo;
+            anterior->sig = nuevoNodo;
+            nuevoNodo->ant = anterior;
+        }
+
+        rangosOrdenados->total++;
+        r = r->sig;
     }
 
-    cout << frescos << endl;
+    // mergear rangos
+    ListaRango rangosFinales = crearListaRango();
+    nodoRango *it = rangosOrdenados->lista;
+    while (it != NULL)
+    {
+        Rango actual = it->valor;
+        it = it->sig;
+
+        while (it != NULL && it->valor.desde <= actual.hasta + 1)
+        {
+            actual.hasta = max(actual.hasta, it->valor.hasta);
+            it = it->sig;
+        }
+
+        insertarRango(rangosFinales, actual);
+    }
+
+    //  sumar cantidad total de IDs frescos
+    long long totalFrescos = 0;
+    nodoRango *final = rangosFinales->lista;
+    while (final != NULL)
+    {
+        totalFrescos += (final->valor.hasta - final->valor.desde + 1);
+        final = final->sig;
+    }
+
+    cout << totalFrescos << endl;
+
+    // int frescos = 0;
+    // nodoInt *actual = ids->lista;
+    // while (actual != NULL)
+    // {
+    //     if (esFresco(actual->valor, rangos))
+    //         frescos++;
+    //     actual = actual->sig;
+    // }
+
+    // cout << frescos << endl;
     return 0;
 }
