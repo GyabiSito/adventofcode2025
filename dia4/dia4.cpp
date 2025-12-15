@@ -23,6 +23,13 @@ Lista crearLista()
     L->lista = NULL;
     return L;
 }
+
+struct filaNodo {
+    Lista fila;
+    filaNodo *sig;
+    filaNodo *ant;
+} typedef *ListaFilas;
+
 void insertarFinal(Lista L, char c)
 {
     nodoLista nuevo = new nodo;
@@ -57,29 +64,50 @@ nodoLista getNodo(Lista L, int index)
 
     return aux;
 }
-int contarVecinos(Lista prev, Lista cur, Lista next, int col)
-{
+// int contarVecinos(Lista prev, Lista cur, Lista next, int col)
+// {
+//     int total = 0;
+
+//     // listas disponibles: prev, cur, next
+//     // cada una puede ser NULL (bordes)
+
+//     Lista filas[3] = {prev, cur, next};
+//     int filasIndex[3] = {-1, 0, 1}; // -1 fila arriba, 0 actual, +1 abajo
+
+//     for (int f = 0; f < 3; f++)
+//     {
+//         if (filas[f] == NULL)
+//             continue;
+
+//         for (int dc = -1; dc <= 1; dc++)
+//         {
+
+//             if (filasIndex[f] == 0 && dc == 0)
+//                 continue; // no contar a sí mismo
+
+//             nodoLista nodoV = getNodo(filas[f], col + dc);
+
+//             if (nodoV != NULL && nodoV->valor == '@')
+//                 total++;
+//         }
+//     }
+
+//     return total;
+// }
+
+int contarVecinos(Lista prev, Lista cur, Lista next, int col) {
     int total = 0;
-
-    // listas disponibles: prev, cur, next
-    // cada una puede ser NULL (bordes)
-
     Lista filas[3] = {prev, cur, next};
-    int filasIndex[3] = {-1, 0, 1}; // -1 fila arriba, 0 actual, +1 abajo
 
-    for (int f = 0; f < 3; f++)
-    {
+    for (int f = 0; f < 3; f++) {
         if (filas[f] == NULL)
             continue;
 
-        for (int dc = -1; dc <= 1; dc++)
-        {
-
-            if (filasIndex[f] == 0 && dc == 0)
-                continue; // no contar a sí mismo
+        for (int dc = -1; dc <= 1; dc++) {
+            if (f == 1 && dc == 0)
+                continue;
 
             nodoLista nodoV = getNodo(filas[f], col + dc);
-
             if (nodoV != NULL && nodoV->valor == '@')
                 total++;
         }
@@ -99,56 +127,164 @@ Lista leerLinea(ifstream &file)
 
     return L;
 }
+Lista copiarLista(Lista original) {
+    Lista nueva = crearLista();
+    nodoLista aux = original->lista;
+    while (aux != NULL) {
+        insertarFinal(nueva, aux->valor);
+        aux = aux->sig;
+    }
+    return nueva;
+}
 
-int main()
-{
+ListaFilas copiarFilas(ListaFilas original) {
+    ListaFilas nuevaCabeza = NULL, anterior = NULL;
+
+    while (original != NULL) {
+        Lista nuevaFila = copiarLista(original->fila);
+        ListaFilas nuevoNodo = new filaNodo;
+        nuevoNodo->fila = nuevaFila;
+        nuevoNodo->sig = NULL;
+        nuevoNodo->ant = anterior;
+
+        if (anterior != NULL)
+            anterior->sig = nuevoNodo;
+        else
+            nuevaCabeza = nuevoNodo;
+
+        anterior = nuevoNodo;
+        original = original->sig;
+    }
+
+    return nuevaCabeza;
+}
+// int main()
+// {
+//     ifstream file("input.txt");
+
+//     // Mantener 3 punteros:
+//     Lista prev = NULL;            // fila anterior
+//     Lista cur = leerLinea(file);  // fila actual
+//     Lista next = leerLinea(file); // fila siguiente
+//     int total = 0;
+//     while (cur != NULL)
+//     {
+
+//         Lista resultado = crearLista();
+
+//         for (int col = 0; col < cur->total; col++)
+//         {
+
+//             nodoLista nodoActual = getNodo(cur, col);
+
+//             if (nodoActual->valor == '@')
+//             {
+//                 int vecinos = contarVecinos(prev, cur, next, col);
+
+//                 if (vecinos < 4)
+//                 {
+
+//                     insertarFinal(resultado, 'x');
+//                     total++;
+//                 }
+
+//                 else
+//                     insertarFinal(resultado, '@');
+//             }
+//             else
+//             {
+//                 insertarFinal(resultado, nodoActual->valor); // .
+//             }
+//         }
+
+//         nodoLista aux = resultado->lista;
+//         while (aux != NULL)
+//         {
+//             aux = aux->sig;
+//         }
+//         prev = cur;
+//         cur = next;
+//         next = leerLinea(file);
+//     }
+//     cout << total;
+
+//     return 0;
+// }
+
+
+int main() {
     ifstream file("input.txt");
 
-    // Mantener 3 punteros:
-    Lista prev = NULL;            // fila anterior
-    Lista cur = leerLinea(file);  // fila actual
-    Lista next = leerLinea(file); // fila siguiente
-    int total = 0;
-    while (cur != NULL)
-    {
+    // Cargar todas las filas como lista doblemente enlazada
+    ListaFilas cabeza = NULL, ultimo = NULL;
 
-        Lista resultado = crearLista();
+    while (true) {
+        Lista fila = leerLinea(file);
+        if (fila == NULL)
+            break;
 
-        for (int col = 0; col < cur->total; col++)
-        {
+        ListaFilas nuevoNodo = new filaNodo;
+        nuevoNodo->fila = fila;
+        nuevoNodo->sig = NULL;
+        nuevoNodo->ant = ultimo;
 
-            nodoLista nodoActual = getNodo(cur, col);
+        if (ultimo != NULL)
+            ultimo->sig = nuevoNodo;
+        else
+            cabeza = nuevoNodo;
 
-            if (nodoActual->valor == '@')
-            {
-                int vecinos = contarVecinos(prev, cur, next, col);
-
-                if (vecinos < 4)
-                {
-
-                    insertarFinal(resultado, 'x');
-                    total++;
-                }
-
-                else
-                    insertarFinal(resultado, '@');
-            }
-            else
-            {
-                insertarFinal(resultado, nodoActual->valor); // .
-            }
-        }
-
-        nodoLista aux = resultado->lista;
-        while (aux != NULL)
-        {
-            aux = aux->sig;
-        }
-        prev = cur;
-        cur = next;
-        next = leerLinea(file);
+        ultimo = nuevoNodo;
     }
-    cout << total;
 
+    int totalRemovidos = 0;
+    bool huboCambios = true;
+
+    while (huboCambios) {
+        huboCambios = false;
+        ListaFilas original = cabeza;
+        ListaFilas nuevoMapa = NULL, ultimoNuevo = NULL;
+
+        while (original != NULL) {
+            Lista resultado = crearLista();
+
+            Lista prev = (original->ant != NULL) ? original->ant->fila : NULL;
+            Lista cur = original->fila;
+            Lista next = (original->sig != NULL) ? original->sig->fila : NULL;
+
+            for (int col = 0; col < cur->total; col++) {
+                nodoLista nodoActual = getNodo(cur, col);
+
+                if (nodoActual->valor == '@') {
+                    int vecinos = contarVecinos(prev, cur, next, col);
+                    if (vecinos < 4) {
+                        insertarFinal(resultado, 'x');
+                        totalRemovidos++;
+                        huboCambios = true;
+                    } else {
+                        insertarFinal(resultado, '@');
+                    }
+                } else {
+                    insertarFinal(resultado, nodoActual->valor);
+                }
+            }
+
+            ListaFilas nuevoNodo = new filaNodo;
+            nuevoNodo->fila = resultado;
+            nuevoNodo->sig = NULL;
+            nuevoNodo->ant = ultimoNuevo;
+
+            if (ultimoNuevo != NULL)
+                ultimoNuevo->sig = nuevoNodo;
+            else
+                nuevoMapa = nuevoNodo;
+
+            ultimoNuevo = nuevoNodo;
+            original = original->sig;
+        }
+
+        cabeza = nuevoMapa;
+    }
+
+    cout << "Total removidos: " << totalRemovidos << endl;
     return 0;
 }
