@@ -107,7 +107,7 @@ long long execute_part2(const string& fileName) {
 }
 
 int main() {
-    string fileName = "./input.txt";  // o "./day09/test_input_09.txt"
+    string fileName = "./input.txt";  
     long long maxRect = execute_part2(fileName);
     cout << "Max rectangle area: " << maxRect << endl;
     return 0;
