@@ -77,14 +77,26 @@ void insertarvalor(Lista &L, int valor)
     aux->sig = nuevo;
 }
 
-void unirArboles(Arbol *bosque, int a, int b)
+// void unirArboles(Arbol *bosque, int a, int b)
+// {
+//     Arbol rootA = buscarPadre(bosque[a]);
+//     Arbol rootB = buscarPadre(bosque[b]);
+//     if (rootA != rootB)
+//     {
+//         rootB->padre = rootA;
+//     }
+// }
+
+bool unirArboles(Arbol *bosque, int a, int b)
 {
     Arbol rootA = buscarPadre(bosque[a]);
     Arbol rootB = buscarPadre(bosque[b]);
     if (rootA != rootB)
     {
         rootB->padre = rootA;
+        return true;
     }
+    return false;
 }
 
 void unirListas(Lista &A, Lista &B)
@@ -262,17 +274,43 @@ int main()
     }
     output.close();
 
-    int conexionesHechas = 0;
-    int maxConexiones = 1000;
+    // int conexionesHechas = 0;
+    // int maxConexiones = 1000;
 
-    for (int i = 0; i < e->cantidadConexiones && conexionesHechas < maxConexiones; i++)
+    // for (int i = 0; i < e->cantidadConexiones && conexionesHechas < maxConexiones; i++)
+    // {
+    //     int a = e->conexiones[i].a;
+    //     int b = e->conexiones[i].b;
+
+    //     unirArboles(bosque, a, b);
+    //     conexionesHechas++;
+    // }
+
+    long long respuestaParte2 = 0;
+    int lastA = -1, lastB = -1;
+    int componentes = totalCajas; 
+
+    for (int i = 0; i < e->cantidadConexiones; i++)
     {
         int a = e->conexiones[i].a;
         int b = e->conexiones[i].b;
 
-        unirArboles(bosque, a, b);
-        conexionesHechas++;
+        if (unirArboles(bosque, a, b))
+        {
+            componentes--;
+            lastA = a;
+            lastB = b;
+
+            if (componentes == 1)
+            {
+                long long xa = (long long)e->cajas[lastA].x;
+                long long xb = (long long)e->cajas[lastB].x;
+                respuestaParte2 = xa * xb;
+                break;
+            }
+        }
     }
+    cout << "Parte 2 (X(a)*X(b) de la ultima union): " << respuestaParte2 << endl;
 
     for (int i = 0; i < totalCajas; i++)
     {
